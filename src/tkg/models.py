@@ -1,9 +1,9 @@
 """Data models for the Temporal Knowledge Graph (follows HLD Section 5)."""
+import datetime as dt
 from dataclasses import dataclass, field
-from datetime import date, time
 
 
-
+# ---------- Things we store (HLD 5.1) ----------
 
 @dataclass
 class Group:
@@ -45,8 +45,8 @@ class Utterance:
     index: int                         # position in the meeting (0, 1, 2...)
     speaker_label: str                 # "Speaker1" - restarts every meeting
     text: str
-    date: date
-    timestamp: time | None = None      # time of day, if the transcript has it
+    date: dt.date
+    timestamp: dt.time | None = None   # time of day, if the transcript has it
     person_id: str | None = None       # filled in LATER by speaker matching
     embedding: list[float] | None = None   # for search by meaning
 
@@ -54,9 +54,9 @@ class Utterance:
 @dataclass
 class Meeting:
     meeting_id: str
-    date: date
+    date: dt.date
     department: str
-    time: time | None = None
+    start_time: dt.time | None = None
     series: str | None = None          # name of the MeetingSeries
     candidate_id: str | None = None    # None when the transcript says "none"
     panel: dict[str, str] = field(default_factory=dict)  # {"Speaker1": "Person_001"}
@@ -72,7 +72,7 @@ class StatusFact:
     points back to the one it replaces."""
     subject_id: str                    # a candidate or project ID
     status: str                        # e.g. "on hold", "move forward"
-    valid_from: date
-    valid_to: date | None = None       # None = still true today
+    valid_from: dt.date
+    valid_to: dt.date | None = None    # None = still true today
     source_meeting_id: str | None = None
     replaces: str | None = None        # id of the older StatusFact
