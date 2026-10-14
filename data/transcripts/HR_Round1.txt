@@ -1,0 +1,10 @@
+MEETING: HR_Round1
+DATE: 2026-09-01
+DEPARTMENT: HR
+CANDIDATE: Candidate_01
+PANEL: Speaker1=Person_001, Speaker2=Person_002
+---
+Speaker1: Tell us about your last project.
+Speaker2: I noticed the candidate struggled with communication when explaining the design.
+Speaker1: Agreed, communication was unclear. Technical skills look good though.
+Speaker2: Overall I am unsure, let us put the candidate on hold for now.

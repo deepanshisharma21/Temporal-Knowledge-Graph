@@ -1,0 +1,8 @@
+MEETING: Eng_Sync1
+DATE: 2026-09-10
+DEPARTMENT: Engineering
+CANDIDATE: none
+PANEL: Speaker1=Person_004, Speaker2=Person_005
+---
+Speaker1: New hires seem to have poor communication with the team.
+Speaker2: Yes, communication is a recurring concern for us too.

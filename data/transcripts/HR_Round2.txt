@@ -1,0 +1,9 @@
+MEETING: HR_Round2
+DATE: 2026-09-08
+DEPARTMENT: HR
+CANDIDATE: Candidate_01
+PANEL: Speaker1=Person_001, Speaker2=Person_003
+---
+Speaker1: Communication was much clearer this time.
+Speaker2: I have a concern about system design depth, it was weak.
+Speaker1: Fair point. Still, I recommend we move forward with the candidate.
