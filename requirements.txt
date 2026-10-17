@@ -3,3 +3,4 @@ python-dotenv
 pydantic
 sentence-transformers
 mcp<2
+pytest
