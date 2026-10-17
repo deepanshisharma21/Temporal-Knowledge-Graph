@@ -48,6 +48,7 @@ flowchart LR
 
 ![Graph view](docs/graph.png)
 ![Answer in Claude Desktop](docs/claude-answer.png)
+![Tabular View](graph2.png)
 
 ## The 8 questions
 
